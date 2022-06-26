@@ -5,6 +5,7 @@ function ColorForm(props) {
   const handleSubmit = (e) => {
     e.preventDefault();
     props.addColor(theInput);
+    e.target.reset();
   };
 
   return (
